@@ -1,0 +1,731 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+html{
+    scroll-behavior: smooth;
+}
+#nav-bar{
+    width: 100%;
+    height: 12vh;
+    background-color: #292929;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0.9, 0.7);
+    position: sticky;
+    left: 0;
+    top: 0;
+    z-index: 999;
+}
+#nav-bar span{
+    margin-left: 100px;
+}
+#nav-bar span a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #ffa31a;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+#nav-bar ul{
+    display: block;
+    width: 500px;
+}
+#nav-bar ul li{
+    display: inline-block;
+    padding: 0px 20px;
+}
+#nav-bar ul li .account-dropdown{
+    display: inline-block;
+    position: relative;
+}
+#nav-bar ul li .account-dropdown .account-content{
+    display: none;
+    position: absolute;
+    background-color: #292929;
+    min-width: 120px;
+    border-radius: 2px;
+}
+#nav-bar ul li .account-dropdown .account-content a{
+    display: block;
+    padding: 15px;
+    border-bottom: 2px solid #ffa31a;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    
+}
+#nav-bar ul li .account-dropdown:hover .account-content {
+    display: block;
+  }
+#nav-bar ul li a{
+    text-decoration: none;
+    color: #ffa31a;
+    font-size: 20px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#nav-bar ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #ffa31a;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+#nav-bar ul li a:hover::after{
+    width: 100%;
+    cursor: pointer;
+}
+#nav-bar .fa-solid{
+    display: none;
+}
+#body{
+    width: 100%;
+    height: 70vh;
+}
+#body .swiper{
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    
+}
+#body .swiper img{
+    height: 100%;
+    width: 100%;
+}
+#body .swiper span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    z-index: 19;
+    background:transparent;
+    flex-direction: column;
+}
+#body .swiper span h1{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+    outline: 2px solid #292929;
+    background-color: black;
+    color:#ffa31a;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+#body .swiper span h2{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 40px;
+    color:#ffa31a;
+    outline: 2px solid #292929;
+    margin-top: 5px;
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px 10px;
+}
+#body .swiper span p{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: italic;
+    color:#ffa31a;
+    outline: 2px solid #292929;
+    margin-top: 5px;
+    background-color: black;
+    padding: 10px 10px;
+}
+#body .swiper span button{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    color:#ffa31a;
+    border: 2px solid #292929;
+    border-radius: 10px;
+    margin-top: 5px;
+    background-color: black;
+    padding: 10px 10px;
+    transition: 0.5s;
+}
+#body .swiper span button:hover{
+    color:black;
+    cursor: pointer;
+    background-color: #ffa31a;
+}
+#body .swiper .swiper-button-next, .swiper .swiper-button-prev{
+   display: none;
+}
+#trending{
+    width: 100%;
+    height: 110vh;
+    display: block;
+}
+#trending .trending-header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+#trending .trending-header h1{
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#1b1b1b;
+    padding: 10px 0px;
+}
+#trending .trending-body{
+    width: 100%;
+    padding-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#trending .trending-body div{
+    flex-basis: 20%;
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    border: 5px solid #1b1b1b;
+    border-radius: 10px;
+    z-index: 20;
+}
+#trending .trending-body div:hover{
+    cursor: pointer;
+}
+
+#trending .trending-body div:nth-child(1){
+    background-image: url(1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#trending .trending-body div:nth-child(1):hover{
+    background-image: url(1.gif);
+    background-size: cover;
+    background-position: center;  
+}
+
+#trending .trending-body div:nth-child(2){
+    background-image: url(2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(2):hover{
+    background-image: url(2.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(3){
+    background-image: url(3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(3):hover{
+    background-image: url(3.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(4){
+    background-image: url(4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(4):hover{
+    background-image: url(4.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(5){
+    background-image: url(5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(5):hover{
+    background-image: url(5.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(6){
+    background-image: url(6.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(6):hover{
+    background-image: url(6.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(7){
+    background-image: url(7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(7):hover{
+    background-image: url(7.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#trending .trending-body div:nth-child(8){
+    background-image: url(8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#trending .trending-body div:nth-child(8):hover{
+    background-image: url(8.gif);
+    background-size: cover;
+    background-position: center;  
+}
+
+#hentai{
+    width: 100%;
+    height: 110vh;
+    display: block;
+    padding:50px 0px;
+}
+#hentai .hentai-header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+#hentai .hentai-header h1{
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#1b1b1b;
+    padding: 10px 0px;
+}
+#hentai .hentai-body{
+    width: 100%;
+    padding-top: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+#hentai .hentai-body div{
+    flex-basis: 20%;
+    background-size: cover;
+    background-position: center;
+    height: 210px;
+    border: 5px solid #1b1b1b;
+    border-radius: 10px;
+    z-index: 20;
+}
+#hentai .hentai-body div:hover{
+    cursor: pointer;
+}
+#hentai .hentai-body div:nth-child(1){
+    background-image: url(h1.jpg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+#hentai .hentai-body div:nth-child(1):hover{
+    background-image: url(h1.gif);
+    background-size: cover;
+    background-position: center;  
+}
+
+#hentai .hentai-body div:nth-child(2){
+    background-image: url(h2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hentai .hentai-body div:nth-child(2):hover{
+    background-image: url(h2.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(3){
+    background-image: url(h3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hentai .hentai-body div:nth-child(3):hover{
+    background-image: url(h3.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(4){
+    background-image: url(h4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#hentai .hentai-body div:nth-child(4):hover{
+    background-image: url(h4.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(5){
+    background-image: url(h5.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hentai .hentai-body div:nth-child(5):hover{
+    background-image: url(h5.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(6){
+    background-image: url(h6.jpg);
+    background-size: cover;
+    background-position: center;;
+}
+#hentai .hentai-body div:nth-child(6):hover{
+    background-image: url(h6.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(7){
+    background-image: url(h7.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hentai .hentai-body div:nth-child(7):hover{
+    background-image: url(h7.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#hentai .hentai-body div:nth-child(8){
+    background-image: url(h8.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#hentai .hentai-body div:nth-child(8):hover{
+    background-image: url(h8.gif);
+    background-size: cover;
+    background-position: center;  
+}
+#categories{
+    width: 100%;
+    height:60vh;
+    display: block;
+    padding:100px 0px;
+}
+#categories .categories-header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+}
+#categories .categories-header h1{
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#1b1b1b;
+}
+#categories .categories-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+#categories .categories-body div h1{
+    color: #ffa31a;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+#categories .categories-body div{
+    flex-basis: 10%;
+    flex-grow: 1;
+    background-size: cover;
+    background-position: center;
+    height: 100px;
+    border: 5px solid #1b1b1b;
+    border-radius: 10px;
+    z-index: 20;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+#categories .categories-body div:hover:nth-child(1){
+    cursor: pointer;
+    background-image: url(c1.gif);
+    background-size: cover;
+    background-position: center;
+    
+}
+#categories .categories-body div:hover:nth-child(2){
+    cursor: pointer;
+    background-image: url(c2.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(3){
+    cursor: pointer;
+    background-image: url(c3.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(4){
+    cursor: pointer;
+    background-image: url(c4.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(5){
+    cursor: pointer;
+    background-image: url(c5.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(6){
+    cursor: pointer;
+    background-image: url(c6.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(7){
+    cursor: pointer;
+    background-image: url(c7.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(8){
+    cursor: pointer;
+    background-image: url(c8.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(9){
+    cursor: pointer;
+    background-image: url(c9.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(10){
+    cursor: pointer;
+    background-image: url(c10.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(11){
+    cursor: pointer;
+    background-image: url(c11.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(12){
+    cursor: pointer;
+    background-image: url(c12.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(13){
+    cursor: pointer;
+    background-image: url(c13.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(14){
+    cursor: pointer;
+    background-image: url(c14.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(15){
+    cursor: pointer;
+    background-image: url(c15.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(16){
+    cursor: pointer;
+    background-image: url(c16.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(17){
+    cursor: pointer;
+    background-image: url(c17.gif);
+    background-size: cover;
+    background-position: center;
+}
+#categories .categories-body div:hover:nth-child(18){
+    cursor: pointer;
+    background-image: url(c18.gif);
+    background-size: cover;
+    background-position: center;
+}
+#contacts{
+    width: 100%;
+    height:70vh;
+    display: block;
+    padding:100px 0px;
+}
+#contacts .contacts-header{
+    display: flex;
+    width: 100%;
+    height: 15vh;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#contacts .contacts-header h1{
+    font-size: 40px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color:#1b1b1b;
+}
+#contacts .contacts-body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #1b1b1b;
+    flex-wrap: wrap;
+}
+#contacts .contacts-body .contacts-message{
+    display: flex;
+    justify-content: center;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+}
+#contacts .contacts-body .contacts-message h1{
+    font-size: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding-bottom: 10px;
+    color: #ffa31a;
+}
+#contacts .contacts-body .contacts-message textarea{
+    display: block;
+    width: 400px;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size:20px;
+    border-radius: 20px;
+}
+#contacts .contacts-body .contacts-message input{
+    width: 400px;
+    height: 40px;
+    padding: 10px;
+    margin-left: 20px;
+    background-color: #ffa31a;
+    transition: 0.5s;
+    border-radius: 20px;
+
+}
+#contacts .contacts-body .contacts-message input:hover{
+    cursor: pointer;
+    background-color: #fff;
+}
+#contacts .contacts-body .contacts-details{
+    flex: 1; 
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+}
+#contacts .contacts-body .contacts-details h1{
+    font-size: 30px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    padding:20px;
+    color: #ffa31a;   
+}
+
+#contacts .contacts-body .contacts-details p{
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #ffa31a; 
+}
+#contacts .contacts-body .contacts-details a{
+    padding: 0px 10px;
+    font-size: 20px;
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: #ffa31a;
+    text-decoration: none;
+}
+footer{
+    width: 100%;
+    height: 25px;
+    background-color: FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 99;
+    bottom: 0;
+    left: 0 ;
+}
+footer span{
+    font-family: 'Cedarville Cursive', cursive;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Recursive', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+    color:#ffa31a;
+}

@@ -1,0 +1,285 @@
+@media(max-width:700px){
+        
+         #nav-bar span a{
+        font-size: 25px;
+        }
+        #nav-bar span{
+            margin-left: 40px;
+        }
+        #nav-bar ul{
+            position: absolute;
+            background-color: black;
+            height: 100vh;
+            width:200px;
+            text-align: left;
+            top:0;
+            right:0px;
+            display: block;
+            transition: 0.5s;
+            z-index: 97;
+        }
+        #nav-bar ul li{
+            display: block;
+            padding: 15px;
+        }
+        #nav-bar ul li a{
+            color: #ffa31a;
+            font-size: 20px;     
+        }
+        #nav-bar .fa-solid{
+            display: block;
+            color:#fff;
+            margin: 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #body{
+            width: 100%;
+            height: 50vh;
+        }
+        #body .swiper{
+            width: 100%;
+            height: 50vh;
+            
+        }
+        #body .swiper span h1{
+            font-size: 30px;
+        }
+        #body .swiper span h2{
+            font-size: 20px;
+        }
+        #body .swiper span p{
+            font-size: 10px;
+        }
+        #body .swiper span button{
+            font-size: 10px;
+        }
+        #trending{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 50px;
+        }
+        #trending .trending-header{
+            width: 100%;
+            height: 5vh;
+        }
+        #trending .trending-header h1{
+            font-size: 30px;
+        }
+        #trending .trending-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #categories{
+            width: 100%;
+            height:auto;
+            display: block;
+            padding:100px 0px;
+        }
+        #hentai{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+        #hentai .hentai-header h1{
+            font-size: 30px;
+        }
+        #hentai .hentai-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #hentai .hentai-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #contacts{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+        #contacts .contacts-body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-color: #1b1b1b;
+            flex-wrap: wrap;
+        }
+        #contacts .contacts-body .contacts-message{
+            display: flex;
+            padding-top: 10px;
+        }
+        #contacts .contacts-body .contacts-message textarea{
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+        }
+        #contacts .contacts-body .contacts-message input{
+            width: 200px;
+            height: 40px;
+            padding: 10px;
+        
+        }
+        #contacts .contacts-body .contacts-message h1{
+            font-size: 20px;
+        }
+        #contacts .contacts-body .contacts-details h1{
+            font-size: 20px; 
+        }
+        
+        #contacts .contacts-body .contacts-details p{
+            font-size: 10px; 
+        }
+        #contacts .contacts-body .contacts-details a{
+            font-size: 10px; 
+        }
+        
+}
+
+@media(max-width:800px){
+    #nav-bar span a{
+        font-size: 25px;
+        }
+        #nav-bar span{
+            margin-left: 40px;
+        }
+        #nav-bar ul{
+            position: absolute;
+            background-color: black;
+            height: 100vh;
+            width:200px;
+            text-align: left;
+            top:0;
+            right:0px;
+            display: block;
+            transition: 0.5s;
+            z-index: 97;
+        }
+        #nav-bar ul li{
+            display: block;
+            padding: 15px;
+        }
+        #nav-bar ul li a{
+            color: #ffa31a;
+            font-size: 20px;     
+        }
+        #nav-bar .fa-solid{
+            display: block;
+            color:#fff;
+            margin: 20px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+        #body{
+            width: 100%;
+            height: 50vh;
+        }
+        #body .swiper{
+            width: 100%;
+            height: 50vh;
+            
+        }
+        #body .swiper span h1{
+            font-size: 30px;
+        }
+        #body .swiper span h2{
+            font-size: 20px;
+        }
+        #body .swiper span p{
+            font-size: 10px;
+        }
+        #body .swiper span button{
+            font-size: 10px;
+        }
+        #trending{
+        width: 100%;
+        height: auto;
+        display: block;
+        padding-top: 50px;
+        }
+        #trending .trending-header{
+            width: 100%;
+            height: 5vh;
+        }
+        #trending .trending-header h1{
+            font-size: 30px;
+        }
+        #trending .trending-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #categories{
+            width: 100%;
+            height:auto;
+            display: block;
+            padding:100px 0px;
+        }
+        #hentai{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+        #hentai .hentai-header h1{
+            font-size: 30px;
+        }
+        #hentai .hentai-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #hentai .hentai-body div{
+            flex-basis: 20%;
+            flex-grow: 1;
+            min-width: 200px;
+            height: 200px;
+        }
+        #contacts{
+            width: 100%;
+            height:auto;
+            display: block;
+        }
+        #contacts .contacts-body{
+            width: 100%;
+            height: auto;
+            display: flex;
+            background-color: #1b1b1b;
+            flex-wrap: wrap;
+        }
+        #contacts .contacts-body .contacts-message{
+            display: flex;
+            padding-top: 10px;
+        }
+        #contacts .contacts-body .contacts-message textarea{
+            width: 200px;
+            height: 100px;
+            padding: 20px;
+        }
+        #contacts .contacts-body .contacts-message input{
+            width: 200px;
+            height: 40px;
+        }
+        #contacts .contacts-body .contacts-message h1{
+            font-size: 20px;
+        }
+    
+        #contacts .contacts-body .contacts-details h1{
+            font-size: 20px; 
+        }
+        
+        #contacts .contacts-body .contacts-details p{
+            font-size: 12px; 
+        }
+        #contacts .contacts-body .contacts-details a{
+            font-size: 12px; 
+        }
+
+}
